@@ -1,0 +1,21 @@
+sleeping for 2ms
+go routine 2 started
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [semacquire]:
+sync.runtime_Semacquire(0x140000021c0?)
+sync.(*WaitGroup).Wait(0x14000102020)
+main.main()
+
+goroutine 34 [sync.RWMutex.RLock]:
+sync.runtime_SemacquireRWMutexR(0x1e8480?, 0x18?, 0x1400010bf88?)
+sync.(*RWMutex).RLock(...)
+main.main.func2()
+created by main.main in goroutine 1
+
+goroutine 35 [sync.RWMutex.Lock]:
+sync.runtime_SemacquireRWMutex(0x0?, 0x15?, 0x14000098000?)
+sync.(*RWMutex).Lock(0x102f55768?)
+main.main.func3()
+created by main.main in goroutine 1
+exit status 2
