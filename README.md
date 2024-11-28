@@ -7,14 +7,14 @@ This repository contains snippets of Go code, serving as experiments to demonstr
 <details>
 <summary><b>1. RWMutex</b></summary>
 
-- [No read preference](#no-read-preference)
+- 1.1. [No read preference](#no-read-preference)
 
 </details>
 
 <details>
 <summary><b>2. Maps</b></summary>
 
-- [Potential memory leak](#potential-memory-leak)
+- 1.1. [Potential memory leak](#potential-memory-leak)
 
 </details>
 
