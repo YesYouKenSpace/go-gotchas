@@ -1,5 +1,5 @@
 # go-snippets
-This repository stores snippets of golang code. They are usually experiments to demonstrate certain behaviours.
+This repository stores snippets of golang code. They are experiments to demonstrate certain behaviours.
 
 Every `**/main.go` is an experiment on its own, accompanied with `sample.out` which contains both the stdout and stderr
 
