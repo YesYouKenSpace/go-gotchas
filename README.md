@@ -10,7 +10,7 @@ Every `**/main.go` is an experiment on its own, accompanied with `sample.out` wh
    > -- [src](https://pkg.go.dev/sync#RWMutex.RLock:~:text=a%20blocked%20Lock%20call%20excludes%20new%20readers%20from%20acquiring%20the%20lock)
    - read more about [readers-writers-problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) 
 
-### 2. Maps
+## 2. Maps
 
 1. [Potential memory leak](maps/potential-memory-leak/main.go) 
    - better discussed in https://github.com/golang/go/issues/20135 
