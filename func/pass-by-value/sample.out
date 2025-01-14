@@ -1,0 +1,22 @@
+# pointer function
+before pointerFn: 5
+at the end of pointerFn: 10
+after pointerFn: 10
+
+# value function
+before valueFn: 5
+at the end of valueFn: 10
+after valueFn: 5
+
+# slice function
+before sliceFn: [5 6 7]
+at the end of sliceFn: [10 6 7]
+after sliceFn: [10 6 7]
+
+# struct function
+before structFn: {Name:Jane WillIPersist:0x14000104020}
+WillIPersist: let's see
+at the end of structFn: struct { Name string; WillIPersist *string }{Name:"John", WillIPersist:(*string)(0x14000104020)}
+WillIPersist: yes
+after structFn: {Name:Jane WillIPersist:0x14000104020}
+WillIPersist: yes

@@ -72,7 +72,7 @@ func main() {
 	fmt.Printf("Alloc After M1:\t\t%5.2fMB - delta:%5.2fMB\n", ByteSize(stats.Alloc)/MB, ByteSize(stats.Alloc-previous)/MB)
 	previous = stats.Alloc
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 20; i++ {
 		for k, _ := range m1 {
 			delete(m1, k)
 		}
@@ -90,6 +90,8 @@ func main() {
 			diff = previous - stats.Alloc
 			sign = "-"
 		}
+		// Seems like even though we are deleting the keys and readding the exact same number of elements, the memory is not being released
+		// Delta is always positive after every loop
 		fmt.Printf("Alloc Replacing M1 for %d:\t\t%5.2fMB - delta:%s%5.2fMB\n", i, ByteSize(stats.Alloc)/MB, sign, ByteSize(diff)/MB)
 		previous = stats.Alloc
 	}

@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-all: fmt run_all clean_stack_traces
+all: fmt run_all
 
 
 fmt:

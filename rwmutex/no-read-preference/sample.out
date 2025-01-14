@@ -14,8 +14,8 @@ main.main.func2()
 created by main.main in goroutine 1
 
 goroutine 35 [sync.RWMutex.Lock]:
-sync.runtime_SemacquireRWMutex(0x0?, 0x15?, 0x14000098000?)
-sync.(*RWMutex).Lock(0x102f55768?)
+sync.runtime_SemacquireRWMutex(0x0?, 0x15?, 0x14000078000?)
+sync.(*RWMutex).Lock(0x100b6d768?)
 main.main.func3()
 created by main.main in goroutine 1
 exit status 2

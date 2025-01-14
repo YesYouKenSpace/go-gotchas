@@ -1,6 +1,8 @@
-# go-snippets
+# go-gotchas
 
-This repository contains snippets of Go code, serving as experiments to demonstrate specific behaviors. Each `**/main.go` file is an independent experiment, accompanied by a `sample.out` file that includes both stdout and stderr outputs.
+> go-gotcha contains snippets of Go code to demonstrate potential "Gotchas"
+
+This repository contains snippets of Go code, serving as experiments to demonstrate specific behaviors that could be unexpected. Each `**/main.go` file is an independent demonstration, accompanied by a `sample.out` file that includes both stdout and stderr outputs, `sample.out` file is shared so that the reader don't have to run the demonstration to observe the behaviour.
 
 ## Table of Contents
 
@@ -30,3 +32,15 @@ This repository contains snippets of Go code, serving as experiments to demonstr
 1. [Potential memory leak](maps/potential-memory-leak/main.go) 
    - Further discussion at [GitHub Issue #20135](https://github.com/golang/go/issues/20135).
    - This snippet shows that even after deleting all keys and attempting to reuse them, there is still a growing heap allocation. See [sample.out](maps/potential-memory-leak/sample.out) for details on memory loss per loop.
+
+## 3. Func
+
+1. [pass-by-value](func/pass-by-value/main.go)
+
+## 4. Slices
+
+2. [indexing](slices/indexing/main.go)
+
+## Usage
+1. `make all` - cleans output and runs all examples
+2. `make run path=${path}` - runs a particular example. e.g. `make run path=maps/potential-memory-leak`
