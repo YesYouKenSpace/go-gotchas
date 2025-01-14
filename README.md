@@ -16,9 +16,27 @@ This repository contains snippets of Go code, serving as experiments to demonstr
 <details>
 <summary><b>2. Maps</b></summary>
 
-- 1.1. [Potential memory leak](#potential-memory-leak)
+- 2.1. [Potential memory leak](#potential-memory-leak)
 
 </details>
+
+<details>
+<summary><b>3. Func</b></summary>
+
+- 3.1. [pass-by-value](#pass-by-value)
+
+</details>
+
+<details>
+<summary><b>4. Slices</b></summary>
+
+- 4.1. [indexing](#indexing)
+
+</details>
+
+## Usage
+1. `make all` - cleans output and runs all examples
+2. `make run path=${path}` - runs a particular example. e.g. `make run path=maps/potential-memory-leak`
 
 ## 1. RWMutex
 
@@ -41,6 +59,3 @@ This repository contains snippets of Go code, serving as experiments to demonstr
 
 2. [indexing](slices/indexing/main.go)
 
-## Usage
-1. `make all` - cleans output and runs all examples
-2. `make run path=${path}` - runs a particular example. e.g. `make run path=maps/potential-memory-leak`
