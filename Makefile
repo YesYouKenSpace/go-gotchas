@@ -19,7 +19,7 @@ run: run_path clean_stack_traces_path
 run_path:
 	@echo "Running main.go file and saving output to sample.out.draft in specified directory: $(path)"
 	@if [ -n "$(path)" ]; then \
-		(cd $(path) && go run main.go > sample.out.draft 2>&1 || true); \
+		(cd $(path) && go run --race main.go > sample.out.draft 2>&1 || true); \
 	else \
 		echo "Please specify a path using 'make run_path path=<directory>'"; \
 	fi
@@ -27,7 +27,7 @@ run_path:
 clean_stack_traces_path:
 	@echo "Cleaning stack traces from sample.out file in specified directory: $(path)"
 	@if [ -n "$(path)" ]; then \
-		(cd $(path) && sed -E "/^(\s|\t)+\\//d" sample.out.draft > sample.out); \
+		(cd $(path) && sed -E "s/.+\/(go-gotchas|golang)/    \/\1/" sample.out.draft > sample.out); \
 	else \
 		echo "Please specify a path using 'make clean_stack_traces_path path=<directory>'"; \
 	fi
