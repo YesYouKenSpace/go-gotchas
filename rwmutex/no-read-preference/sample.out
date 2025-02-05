@@ -1,10 +1,10 @@
 goroutine A started
 goroutine A acquired the read lock
-goroutine A sending signal to goroutine B
 goroutine B started
 goroutine B waiting for goroutine A to acquire the read lock
-goroutine B attempting to acquire the write lock
+goroutine A sending signal to goroutine B
 goroutine A sleeping for 2ms
+goroutine B attempting to acquire the write lock
 goroutine A attempting to acquire another read lock -- if there was read preference, this would succeed
 fatal error: all goroutines are asleep - deadlock!
 
@@ -16,20 +16,20 @@ sync.(*WaitGroup).Wait(0xc00000e140)
 main.main()
     /go-gotchas/rwmutex/no-read-preference/main.go:54 +0x260
 
-goroutine 3 [sync.RWMutex.RLock]:
-sync.runtime_SemacquireRWMutexR(0xc00001c190?, 0x1?, 0x0?)
+goroutine 6 [sync.RWMutex.RLock]:
+sync.runtime_SemacquireRWMutexR(0xc00001a190?, 0x1?, 0x0?)
     /golang/1.23.1/go/src/runtime/sema.go:100 +0x28
-sync.(*RWMutex).RLock(0xc00001c180)
+sync.(*RWMutex).RLock(0xc00001a180)
     /golang/1.23.1/go/src/sync/rwmutex.go:72 +0x60
 main.main.func2()
     /go-gotchas/rwmutex/no-read-preference/main.go:36 +0x238
 created by main.main in goroutine 1
     /go-gotchas/rwmutex/no-read-preference/main.go:23 +0x17c
 
-goroutine 4 [sync.RWMutex.Lock]:
-sync.runtime_SemacquireRWMutex(0xc00001c194?, 0x1?, 0x0?)
+goroutine 7 [sync.RWMutex.Lock]:
+sync.runtime_SemacquireRWMutex(0xc00001a194?, 0x1?, 0x0?)
     /golang/1.23.1/go/src/runtime/sema.go:105 +0x28
-sync.(*RWMutex).Lock(0xc00001c180)
+sync.(*RWMutex).Lock(0xc00001a180)
     /golang/1.23.1/go/src/sync/rwmutex.go:153 +0x88
 main.main.func3()
     /go-gotchas/rwmutex/no-read-preference/main.go:49 +0x140
