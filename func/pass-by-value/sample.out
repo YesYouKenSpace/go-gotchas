@@ -14,9 +14,9 @@ at the end of sliceFn: [10 6 7]
 after sliceFn: [10 6 7]
 
 # struct function
-before structFn: {Name:Jane WillIPersist:0xc000124020}
+before structFn: {Name:Jane WillIPersist:0xc000124010}
 WillIPersist: let's see
-at the end of structFn: struct { Name string; WillIPersist *string }{Name:"John", WillIPersist:(*string)(0xc000124020)}
+at the end of structFn: struct { Name string; WillIPersist *string }{Name:"John", WillIPersist:(*string)(0xc000124010)}
 WillIPersist: yes
-after structFn: {Name:Jane WillIPersist:0xc000124020}
+after structFn: {Name:Jane WillIPersist:0xc000124010}
 WillIPersist: yes

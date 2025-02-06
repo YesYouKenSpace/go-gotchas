@@ -1,0 +1,112 @@
+==================
+WARNING: DATA RACE
+Read at 0x00c000112038 by goroutine 258:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xa8
+
+Previous write at 0x00c000112038 by goroutine 270:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xb8
+
+Goroutine 258 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+
+Goroutine 270 (finished) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+==================
+==================
+WARNING: DATA RACE
+Read at 0x00c000112038 by goroutine 18:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xa8
+
+Previous write at 0x00c000112038 by goroutine 267:
+  main.main.func2()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:29 +0xb8
+
+Goroutine 18 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+
+Goroutine 267 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:25 +0x20c
+==================
+==================
+WARNING: DATA RACE
+Write at 0x00c000112038 by goroutine 18:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xb8
+
+Previous write at 0x00c000112038 by goroutine 267:
+  main.main.func2()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:29 +0xb8
+
+Goroutine 18 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+
+Goroutine 267 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:25 +0x20c
+==================
+==================
+WARNING: DATA RACE
+Write at 0x00c000112038 by goroutine 18:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xb8
+
+Previous write at 0x00c000112038 by goroutine 182:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xb8
+
+Goroutine 18 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+
+Goroutine 182 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+==================
+==================
+WARNING: DATA RACE
+Read at 0x00c000112038 by goroutine 83:
+  main.main.func2()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:29 +0xa8
+
+Previous write at 0x00c000112038 by goroutine 298:
+  main.main.func1()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:22 +0xb8
+
+Goroutine 83 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:25 +0x20c
+
+Goroutine 298 (finished) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:18 +0x158
+==================
+==================
+WARNING: DATA RACE
+Read at 0x00c000112038 by goroutine 131:
+  main.main.func2()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:29 +0xa8
+
+Previous write at 0x00c000112038 by goroutine 211:
+  main.main.func2()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:29 +0xb8
+
+Goroutine 131 (running) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:25 +0x20c
+
+Goroutine 211 (finished) created at:
+  main.main()
+    /go-gotchas/memory-model/increment-decrement-not-atomic/main.go:25 +0x20c
+==================
+unsafeInt=-22199
+atomicInt=0
+Found 6 data race(s)
+exit status 66

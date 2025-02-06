@@ -7,24 +7,23 @@ import (
 )
 
 func main() {
-	i := 0
+	unsafeInt := 0
 	runs := 10000
 	mu := sync.RWMutex{}
 	mu.Lock()
 	for range 100 {
-
 		go func() {
 			mu.RLock()
 			defer mu.RUnlock()
 			for range runs {
-				i++
+				unsafeInt++
 			}
 		}()
 		go func() {
 			mu.RLock()
 			defer mu.RUnlock()
 			for range runs {
-				i--
+				unsafeInt--
 			}
 		}()
 	}
@@ -32,5 +31,5 @@ func main() {
 	mu.Unlock()
 	time.Sleep(1 * time.Second)
 	mu.Lock()
-	fmt.Printf("i=%d\n", i)
+	fmt.Printf("unsafeInt=%d\n", unsafeInt)
 }

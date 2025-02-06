@@ -1,23 +1,23 @@
 Alloc at startup:		 0.14MB - delta: 0.14MB
-Alloc Elements M1:		288.74MB - delta:288.60MB
-Alloc After M1:		427.47MB - delta:138.73MB
-Alloc Replacing M1 for 0:		379.25MB - delta:-48.21MB
-Alloc Replacing M1 for 1:		379.25MB - delta:+ 0.00MB
-Alloc Replacing M1 for 2:		379.30MB - delta:+ 0.05MB
-Alloc Replacing M1 for 3:		380.40MB - delta:+ 1.09MB
-Alloc Replacing M1 for 4:		381.48MB - delta:+ 1.09MB
-Alloc Replacing M1 for 5:		382.57MB - delta:+ 1.09MB
-Alloc Replacing M1 for 6:		383.63MB - delta:+ 1.05MB
-Alloc Replacing M1 for 7:		384.69MB - delta:+ 1.07MB
-Alloc Replacing M1 for 8:		385.72MB - delta:+ 1.03MB
-Alloc Replacing M1 for 9:		386.71MB - delta:+ 0.99MB
-Alloc Replacing M1 for 10:		387.71MB - delta:+ 0.99MB
-Alloc Replacing M1 for 11:		388.68MB - delta:+ 0.97MB
-Alloc Replacing M1 for 12:		389.62MB - delta:+ 0.94MB
-Alloc Replacing M1 for 13:		390.54MB - delta:+ 0.92MB
-Alloc Replacing M1 for 14:		391.47MB - delta:+ 0.93MB
-Alloc Replacing M1 for 15:		392.39MB - delta:+ 0.92MB
-Alloc Replacing M1 for 16:		393.28MB - delta:+ 0.89MB
-Alloc Replacing M1 for 17:		394.15MB - delta:+ 0.87MB
-Alloc Replacing M1 for 18:		395.01MB - delta:+ 0.86MB
-Alloc Replacing M1 for 19:		395.85MB - delta:+ 0.84MB
+Alloc Elements M1:		288.73MB - delta:288.59MB
+Alloc After M1:		427.43MB - delta:138.70MB
+Alloc Replacing M1 for 0:		379.26MB - delta:-48.17MB
+Alloc Replacing M1 for 1:		379.26MB - delta:- 0.00MB
+Alloc Replacing M1 for 2:		379.38MB - delta:+ 0.12MB
+Alloc Replacing M1 for 3:		380.48MB - delta:+ 1.10MB
+Alloc Replacing M1 for 4:		381.57MB - delta:+ 1.09MB
+Alloc Replacing M1 for 5:		382.61MB - delta:+ 1.04MB
+Alloc Replacing M1 for 6:		383.64MB - delta:+ 1.03MB
+Alloc Replacing M1 for 7:		384.65MB - delta:+ 1.01MB
+Alloc Replacing M1 for 8:		385.66MB - delta:+ 1.02MB
+Alloc Replacing M1 for 9:		386.69MB - delta:+ 1.02MB
+Alloc Replacing M1 for 10:		387.66MB - delta:+ 0.98MB
+Alloc Replacing M1 for 11:		388.66MB - delta:+ 0.99MB
+Alloc Replacing M1 for 12:		389.61MB - delta:+ 0.95MB
+Alloc Replacing M1 for 13:		390.56MB - delta:+ 0.95MB
+Alloc Replacing M1 for 14:		391.48MB - delta:+ 0.92MB
+Alloc Replacing M1 for 15:		392.39MB - delta:+ 0.91MB
+Alloc Replacing M1 for 16:		393.29MB - delta:+ 0.90MB
+Alloc Replacing M1 for 17:		394.18MB - delta:+ 0.88MB
+Alloc Replacing M1 for 18:		395.05MB - delta:+ 0.88MB
+Alloc Replacing M1 for 19:		395.88MB - delta:+ 0.83MB
